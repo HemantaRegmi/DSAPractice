@@ -47,13 +47,14 @@ function validAnagram(first, second) {
   for (let i = 0; i < first.length; i++) {
     let letter = first[i];
     //if letter exitsts, increase increment, otherwise set to 1
-    lookup[letter] ? (lookup[letter] += 1) : (lookup[letter] = 1);
+    lookup[letter] ? (lookup[letter] += 1) : (lookup[letter] = 1); //implementing first string letters into lookup object
   }
 
   for (let i = 0; i < second.length; i++) {
     let letter = second[i];
     //can't find letter or if letter is 0 then not anagram
     if (!lookup[letter]) {
+      //checks if lookup object doesnt contain letter. If doesnt contain letter return false else remove letter increment
       return false;
     } else {
       lookup[letter] -= 1;
@@ -61,3 +62,9 @@ function validAnagram(first, second) {
   }
   return true;
 }
+
+//Multiple Pointers Challenge: Count unique variables challenge
+//implement a function called countUniqueValues which accepts a sorted array, and counts the unique values in the array
+//There can be negative numbers in the array, but it will always be sorted
+
+function countUniqueValues() {}
