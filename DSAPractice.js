@@ -67,4 +67,20 @@ function validAnagram(first, second) {
 //implement a function called countUniqueValues which accepts a sorted array, and counts the unique values in the array
 //There can be negative numbers in the array, but it will always be sorted
 
-function countUniqueValues() {}
+arr = [-6, -2, -1, 0, 1, 4, 5, 5, 5, 5];
+function countUniqueValues(arr) {
+  let right = arr.length - 1;
+  let uniqueValues = 0;
+
+  while (0 <= right) {
+    if (arr[right] === arr[right - 1]) {
+      right--;
+    } else {
+      uniqueValues++;
+      right--;
+    }
+  }
+  return uniqueValues;
+}
+
+console.log(countUniqueValues(arr));
