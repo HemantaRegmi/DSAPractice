@@ -68,19 +68,32 @@ function validAnagram(first, second) {
 //There can be negative numbers in the array, but it will always be sorted
 
 arr = [-6, -2, -1, 0, 1, 4, 5, 5, 5, 5];
-function countUniqueValues(arr) {
-  let right = arr.length - 1;
-  let uniqueValues = 0;
+// function countUniqueValues(arr) {
+//   let right = arr.length - 1;
+//   let uniqueValues = 0;
 
-  while (0 <= right) {
-    if (arr[right] === arr[right - 1]) {
-      right--;
-    } else {
-      uniqueValues++;
-      right--;
+//   while (0 <= right) {
+//     if (arr[right] === arr[right - 1]) {
+//       right--;
+//     } else {
+//       uniqueValues++;
+//       right--;
+//     }
+//   }
+//   return uniqueValues;
+// }
+
+// console.log(countUniqueValues(arr));
+
+function countUniqueValues(arr) {
+  if (arr.length === 0) return 0;
+  var i = 0;
+  for (var j = 1; j < arr.length; j++) {
+    if (arr[i] !== arr[j]) {
+      i++;
+      arr[i] = arr[j];
     }
   }
-  return uniqueValues;
+  return i + 1;
 }
-
 console.log(countUniqueValues(arr));
