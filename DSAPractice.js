@@ -67,7 +67,7 @@ function validAnagram(first, second) {
 //implement a function called countUniqueValues which accepts a sorted array, and counts the unique values in the array
 //There can be negative numbers in the array, but it will always be sorted
 
-arr = [-6, -2, -1, 0, 1, 4, 5, 5, 5, 5];
+//arr = [-6, -2, -1, 0, 1, 4, 5, 5, 5, 5];
 // function countUniqueValues(arr) {
 //   let right = arr.length - 1;
 //   let uniqueValues = 0;
@@ -85,15 +85,20 @@ arr = [-6, -2, -1, 0, 1, 4, 5, 5, 5, 5];
 
 // console.log(countUniqueValues(arr));
 
-function countUniqueValues(arr) {
-  if (arr.length === 0) return 0;
-  var i = 0;
-  for (var j = 1; j < arr.length; j++) {
-    if (arr[i] !== arr[j]) {
-      i++;
-      arr[i] = arr[j];
-    }
-  }
-  return i + 1;
-}
-console.log(countUniqueValues(arr));
+//another solution
+// function countUniqueValues(arr) {
+//   if (arr.length === 0) return 0;
+//   var i = 0;
+//   for (var j = 1; j < arr.length; j++) {
+//     if (arr[i] !== arr[j]) {
+//       i++;
+//       arr[i] = arr[j];
+//     }
+//   }
+//   return i + 1;
+// }
+// console.log(countUniqueValues(arr));
+
+//Write a function called sameFrequency. Given 2 positive integers, find out if the two numbers have the same frequency of digits
+
+function sameFrequency() {}
