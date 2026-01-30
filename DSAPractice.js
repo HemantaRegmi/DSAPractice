@@ -99,6 +99,22 @@ function validAnagram(first, second) {
 // }
 // console.log(countUniqueValues(arr));
 
+//SLIDING WINDOW PATTERN You take an array and add the following numbers in the array based on the num that is declared. For example, if num is 3 then in the array you get the index value and you add the nex three following values and move to the next index until you go through the entire array and sum.
+function maxSubArraySum(arr, num) {
+  let maxSum = 0;
+  let tempSum = 0;
+  if (arr.length < num) return null;
+  for (let i = 0; i < num; i++) {
+    maxSum += arr[i];
+  }
+  tempSum = maxSum;
+  for (let i = num; i < arr.length; i++) {
+    tempSum = tempSum - arr[i - num] + arr[i];
+    maxSum = Math.max(maxSum, tempSum);
+  }
+  return maxSum;
+}
+
 //Write a function called sameFrequency. Given 2 positive integers, find out if the two numbers have the same frequency of digits
 
 function sameFrequency() {}
