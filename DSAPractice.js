@@ -99,7 +99,7 @@ function validAnagram(first, second) {
 // }
 // console.log(countUniqueValues(arr));
 
-//SLIDING WINDOW PATTERN You take an array and add the following numbers in the array based on the num that is declared. For example, if num is 3 then in the array you get the index value and you add the nex three following values and move to the next index until you go through the entire array and sum.
+//SLIDING WINDOW PATTERN You take an array and based on num input, you add upp the chunk of numbers from the array index to the index + num amount to get the sum. YOu iterate all the way to the end where it is feasible to add that num amount and return the highest chunk
 function maxSubArraySum(arr, num) {
   let maxSum = 0;
   let tempSum = 0;
@@ -118,3 +118,15 @@ function maxSubArraySum(arr, num) {
 //Write a function called sameFrequency. Given 2 positive integers, find out if the two numbers have the same frequency of digits
 
 function sameFrequency() {}
+
+function areThereDuplicates() {}
+
+function constructNote() {}
+
+function findAllDuplicates() {}
+
+function averagePair() {}
+
+function isSubsequence() {}
+
+function findPair() {}
