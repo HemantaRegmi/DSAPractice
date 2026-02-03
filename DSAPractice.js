@@ -117,7 +117,36 @@ function maxSubArraySum(arr, num) {
 
 //Write a function called sameFrequency. Given 2 positive integers, find out if the two numbers have the same frequency of digits
 
-function sameFrequency() {}
+// function sameFrequency(int1, int2){
+//   // good luck. Add any arguments you deem necessary.
+//   //int1 Int2
+
+//   let mapLookup = {}
+
+//   let integer1 = Math.abs(int1).toString()
+//   let integer2 = Math.abs(int2).toString()
+
+//   if(integer1.length !== integer2.length) {
+//       return false
+//   }
+
+//   for(let i=0; i<integer1.length; i++) {
+//       let character = integer1[i]
+//       mapLookup[character] ? (mapLookup[character] += 1) : (mapLookup[character] = 1)
+//   }
+
+//   for(let i=0; i<integer2.length; i++) {
+//       let character = integer2[i]
+//       if(!mapLookup[character]) {
+//           return false
+//       } else{
+//           mapLookup[character] -= 1
+//       }
+
+//   }
+//   return true
+
+// }
 
 function areThereDuplicates() {}
 
