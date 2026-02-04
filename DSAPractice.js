@@ -148,6 +148,8 @@ function maxSubArraySum(arr, num) {
 
 // }
 
+//implement function areThereDuplicates which accepts a variable number of args, and checks whether there are any duplicates among the args passed in.
+//solve with freq count pattern or multiple pointers pattern
 function areThereDuplicates() {}
 
 function constructNote() {}
